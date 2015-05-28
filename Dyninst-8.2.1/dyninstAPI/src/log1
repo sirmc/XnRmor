@@ -1,0 +1,759 @@
+./opcode.h: * See the dyninst/COPYRIGHT file for copyright information.
+./opcode.h: * You should have received a copy of the GNU Lesser General Public
+./inst-x86.C: * See the dyninst/COPYRIGHT file for copyright information.
+./inst-x86.C: * You should have received a copy of the GNU Lesser General Public
+./inst-x86.C:      // copy callOp
+./dynProcess.h: * See the dyninst/COPYRIGHT file for copyright information.
+./dynProcess.h: * You should have received a copy of the GNU Lesser General Public
+./dynProcess.h:    bool copyDanglingMemory(PCProcess *parent);
+./inst-power.C: * See the dyninst/COPYRIGHT file for copyright information.
+./inst-power.C: * You should have received a copy of the GNU Lesser General Public
+./inst-power.C://   copy the passed arguments into the canonical argument registers (r3-r10)
+./inst-power.C://     Locate the TOC entry of the callee module and copy it into R2
+./inst-power.C:            // Ummm... we didn't find it? Ah, so copying us (since we're wrong)
+./emit-power.h: * See the dyninst/COPYRIGHT file for copyright information.
+./emit-power.h: * You should have received a copy of the GNU Lesser General Public
+./BPatch_type.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_type.C: * You should have received a copy of the GNU Lesser General Public
+./BPatch_type.C:void BPatch_field::copy(BPatch_field &oField) 
+./BPatch_type.C:   copy(oField);
+./BPatch_type.C:   copy(oField);
+./hybridAnalysis.h: * See the dyninst/COPYRIGHT file for copyright information.
+./hybridAnalysis.h: * You should have received a copy of the GNU Lesser General Public
+./syscall-nt.C: * See the dyninst/COPYRIGHT file for copyright information.
+./syscall-nt.C: * You should have received a copy of the GNU Lesser General Public
+./debug.h: * See the dyninst/COPYRIGHT file for copyright information.
+./debug.h: * You should have received a copy of the GNU Lesser General Public
+./legacy-instruction.h: * See the dyninst/COPYRIGHT file for copyright information.
+./legacy-instruction.h: * You should have received a copy of the GNU Lesser General Public
+./clock.h: * See the dyninst/COPYRIGHT file for copyright information.
+./clock.h: * You should have received a copy of the GNU Lesser General Public
+./emitter.h: * See the dyninst/COPYRIGHT file for copyright information.
+./emitter.h: * You should have received a copy of the GNU Lesser General Public
+./variable.C: * See the dyninst/COPYRIGHT file for copyright information.
+./variable.C: * You should have received a copy of the GNU Lesser General Public
+./linux-power.C: * See the dyninst/COPYRIGHT file for copyright information.
+./linux-power.C: * You should have received a copy of the GNU Lesser General Public
+./codegen-power.h: * See the dyninst/COPYRIGHT file for copyright information.
+./codegen-power.h: * You should have received a copy of the GNU Lesser General Public
+./image.h: * See the dyninst/COPYRIGHT file for copyright information.
+./image.h: * You should have received a copy of the GNU Lesser General Public
+./dynThread.h: * See the dyninst/COPYRIGHT file for copyright information.
+./dynThread.h: * You should have received a copy of the GNU Lesser General Public
+./BPatch_thread.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_thread.C: * You should have received a copy of the GNU Lesser General Public
+./codegen-x86.C: * See the dyninst/COPYRIGHT file for copyright information.
+./codegen-x86.C: * You should have received a copy of the GNU Lesser General Public
+./codegen-x86.C:unsigned copy_prefixes(const unsigned char *&origInsn, unsigned char *&newInsn, unsigned insnType) {
+./codegen-x86.C:unsigned copy_prefixes_nosize(const unsigned char *&origInsn, unsigned char *&newInsn, 
+./codegen-x86.C:unsigned copy_prefixes_nosize_or_segments(const unsigned char *&origInsn, unsigned char *&newInsn, 
+./codegen-x86.C:pcRelJump::pcRelJump(patchTarget *t, const instruction &i, bool copyPrefixes) :
+./codegen-x86.C:   copy_prefixes_(copyPrefixes)
+./codegen-x86.C:pcRelJump::pcRelJump(Address target, const instruction &i, bool copyPrefixes) :
+./codegen-x86.C:   copy_prefixes_(copyPrefixes)
+./codegen-x86.C:   if (copy_prefixes_) {
+./codegen-x86.C:       addr += copy_prefixes(origInsn, newInsn, insnType);
+./codegen-x86.C:   addr += copy_prefixes_nosize_or_segments(origInsn, newInsn, insnType); 
+./codegen-x86.C:   addr += copy_prefixes_nosize(origInsn, newInsn, insnType);
+./codegen-x86.C:   // still need to copy the insn
+./codegen-x86.C:   addr += copy_prefixes(origInsn, newInsn, insnType);
+./codegen-x86.C:   // so we copy over the rest of the instruction here
+./codegen-x86.C: * copy of that instruction that has the load/store replaces with a load/store
+./codegen-x86.C:   from += copy_prefixes(origInsn, newInsn, insnType);
+./codegen-x86.C:   from += copy_prefixes_nosize_or_segments(origInsn, newInsn, insnType); 
+./codegen-x86.C:   // Let's try copying prefixes
+./codegen-x86.C:   copy_prefixes_nosize(origInsn, newInsn, insnType);
+./codegen-x86.C:   // still need to copy the insn
+./codegen-x86.C:   from += copy_prefixes(origInsn, newInsn, insnType);
+./codegen-x86.C:   // so we copy over the rest of the instruction here
+./IAPI_to_AST.C: * See the dyninst/COPYRIGHT file for copyright information.
+./IAPI_to_AST.C: * You should have received a copy of the GNU Lesser General Public
+./Patching.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Patching.h: * You should have received a copy of the GNU Lesser General Public
+./debug.C: * See the dyninst/COPYRIGHT file for copyright information.
+./debug.C: * You should have received a copy of the GNU Lesser General Public
+./BPatch_snippet.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_snippet.C: * You should have received a copy of the GNU Lesser General Public
+./freebsd.h: * See the dyninst/COPYRIGHT file for copyright information.
+./freebsd.h: * You should have received a copy of the GNU Lesser General Public
+./dummy.C: * See the dyninst/COPYRIGHT file for copyright information.
+./dummy.C: * You should have received a copy of the GNU Lesser General Public
+./dummy.C:void __uninitialized_copy_aux__H2ZPCt6vector2ZUiZt9allocator1ZUiZPt6vector2ZUiZt9allocator1ZUi_X01X01X11G12__false_type_X11() { abort(); }
+./dummy.C:void __uninitialized_copy_aux__H2ZPC7FERNodeZP7FERNode_X01X01X11G12__false_type_X11() { abort(); }
+./dummy.C:void __uninitialized_copy_aux__H2ZPC6stringZP6string_X01X01X11G12__false_type_X11() { 
+./dummy.C:void __uninitialized_copy_aux__H2ZPCt6vector2ZUlZt9allocator1ZUlZPt6vector2ZUlZt9allocator1ZUl_X01X01X11G12__false_type_X11() {}
+./BPatch_module.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_module.C: * You should have received a copy of the GNU Lesser General Public
+./codeRange.C: * See the dyninst/COPYRIGHT file for copyright information.
+./codeRange.C: * You should have received a copy of the GNU Lesser General Public
+./BPatch_statement.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_statement.C: * You should have received a copy of the GNU Lesser General Public
+./syscall-freebsd.C: * See the dyninst/COPYRIGHT file for copyright information.
+./syscall-freebsd.C: * You should have received a copy of the GNU Lesser General Public
+./inst.C: * See the dyninst/COPYRIGHT file for copyright information.
+./inst.C: * You should have received a copy of the GNU Lesser General Public
+./syscalltrap.h: * See the dyninst/COPYRIGHT file for copyright information.
+./syscalltrap.h: * You should have received a copy of the GNU Lesser General Public
+./BPatch_binaryEdit.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_binaryEdit.C: * You should have received a copy of the GNU Lesser General Public
+./dominator.C: * See the dyninst/COPYRIGHT file for copyright information.
+./dominator.C: * You should have received a copy of the GNU Lesser General Public
+./IAPI_to_AST.h: * See the dyninst/COPYRIGHT file for copyright information.
+./IAPI_to_AST.h: * You should have received a copy of the GNU Lesser General Public
+./edge.C: * See the dyninst/COPYRIGHT file for copyright information.
+./edge.C: * You should have received a copy of the GNU Lesser General Public
+./mapped_module.C: * See the dyninst/COPYRIGHT file for copyright information.
+./mapped_module.C: * You should have received a copy of the GNU Lesser General Public
+./mapped_module.h: * See the dyninst/COPYRIGHT file for copyright information.
+./mapped_module.h: * You should have received a copy of the GNU Lesser General Public
+./ast.h: * See the dyninst/COPYRIGHT file for copyright information.
+./ast.h: * You should have received a copy of the GNU Lesser General Public
+./tags:__uninitialized_copy_aux__H2ZPC6stringZP6string_X01X01X11G12__false_type_X11	dummy.C	/^void __uninitialized_copy_aux__H2ZPC6stringZP6string_X01X01X11G12__false_type_X11() { $/;"	f
+./tags:__uninitialized_copy_aux__H2ZPC7FERNodeZP7FERNode_X01X01X11G12__false_type_X11	dummy.C	/^void __uninitialized_copy_aux__H2ZPC7FERNodeZP7FERNode_X01X01X11G12__false_type_X11() { abort(); }$/;"	f
+./tags:__uninitialized_copy_aux__H2ZPCt6vector2ZUiZt9allocator1ZUiZPt6vector2ZUiZt9allocator1ZUi_X01X01X11G12__false_type_X11	dummy.C	/^void __uninitialized_copy_aux__H2ZPCt6vector2ZUiZt9allocator1ZUiZPt6vector2ZUiZt9allocator1ZUi_X01X01X11G12__false_type_X11() { abort(); }$/;"	f
+./tags:__uninitialized_copy_aux__H2ZPCt6vector2ZUlZt9allocator1ZUlZPt6vector2ZUlZt9allocator1ZUl_X01X01X11G12__false_type_X11	dummy.C	/^void __uninitialized_copy_aux__H2ZPCt6vector2ZUlZt9allocator1ZUlZPt6vector2ZUlZt9allocator1ZUl_X01X01X11G12__false_type_X11() {}$/;"	f
+./tags:copy	BPatch_type.C	/^void BPatch_field::copy(BPatch_field &oField) $/;"	f	class:BPatch_field
+./tags:copy	Relocation/CFG/RelocTarget.h	/^  virtual TargetInt *copy() const { return new Target<Address>(t_); }$/;"	f	class:Dyninst::Relocation::Target
+./tags:copy	Relocation/CFG/RelocTarget.h	/^  virtual TargetInt *copy() const { return new Target<RelocBlock *>(t_); }$/;"	f	class:Dyninst::Relocation::Target
+./tags:copy	Relocation/CFG/RelocTarget.h	/^  virtual TargetInt *copy() const { return new Target<block_instance *>(t_); }$/;"	f	class:Dyninst::Relocation::Target
+./tags:copy	Relocation/CFG/RelocTarget.h	/^  virtual TargetInt *copy() const {return NULL; };$/;"	f	class:Dyninst::Relocation::TargetInt
+./tags:copy	codegen.C	/^void codeGen::copy(codeGen &gen) {$/;"	f	class:codeGen
+./tags:copy	codegen.C	/^void codeGen::copy(const std::vector<unsigned char> &buf) {$/;"	f	class:codeGen
+./tags:copy	codegen.C	/^void codeGen::copy(const void *b, const unsigned size) {$/;"	f	class:codeGen
+./tags:copy	codegen.C	/^void codeGen::copy(const void *b, const unsigned size, const codeBufIndex_t index) {$/;"	f	class:codeGen
+./tags:copyAddressSpace	addressSpace.C	/^void AddressSpace::copyAddressSpace(AddressSpace *parent) {$/;"	f	class:AddressSpace
+./tags:copyAligned	codegen.C	/^void codeGen::copyAligned(const void *b, const unsigned size) {$/;"	f	class:codeGen
+./tags:copyBlock	Relocation/DynCFGMaker.C	/^PatchBlock* DynCFGMaker::copyBlock(PatchBlock* b, PatchObject* o) {$/;"	f	class:DynCFGMaker
+./tags:copyDanglingMemory	freebsd.C	/^bool PCProcess::copyDanglingMemory(PCProcess *) {$/;"	f	class:PCProcess
+./tags:copyDanglingMemory	linux.C	/^bool PCProcess::copyDanglingMemory(PCProcess *) {$/;"	f	class:PCProcess
+./tags:copyDanglingMemory	pdwinnt.C	/^bool PCProcess::copyDanglingMemory(PCProcess *parent)$/;"	f	class:PCProcess
+./tags:copyEdge	Relocation/DynCFGMaker.C	/^PatchEdge* DynCFGMaker::copyEdge(PatchEdge* e, PatchObject* o) {$/;"	f	class:DynCFGMaker
+./tags:copyFunction	Relocation/DynCFGMaker.C	/^PatchFunction* DynCFGMaker::copyFunction(PatchFunction* f, PatchObject* o) {$/;"	f	class:DynCFGMaker
+./tags:copyScratchToCodeBuffer	MemoryEmulator/memEmulatorWidget.C	/^bool MemEmulator::copyScratchToCodeBuffer(CodeBuffer &buffer) {$/;"	f	class:MemEmulator
+./tags:copyTrapMappings	addressSpace.C	/^void trampTrapMappings::copyTrapMappings(trampTrapMappings *parent)$/;"	f	class:trampTrapMappings
+./tags:copyWtxDesc	vxworks.C	/^WTX_EVENT_DESC copyWtxDesc(WTX_EVENT_DESC *desc)$/;"	f
+./tags:copy_prefixes	codegen-x86.C	/^unsigned copy_prefixes(const unsigned char *&origInsn, unsigned char *&newInsn, unsigned insnType) {$/;"	f
+./tags:copy_prefixes_	pcrel.h	/^    bool copy_prefixes_;$/;"	m	class:pcRelJump
+./tags:copy_prefixes_nosize	codegen-x86.C	/^unsigned copy_prefixes_nosize(const unsigned char *&origInsn, unsigned char *&newInsn, $/;"	f
+./tags:copy_prefixes_nosize_or_segments	codegen-x86.C	/^unsigned copy_prefixes_nosize_or_segments(const unsigned char *&origInsn, unsigned char *&newInsn, $/;"	f
+./tags:pcRelJump	codegen-x86.C	/^pcRelJump::pcRelJump(Address target, const instruction &i, bool copyPrefixes) :$/;"	f	class:pcRelJump
+./tags:pcRelJump	codegen-x86.C	/^pcRelJump::pcRelJump(patchTarget *t, const instruction &i, bool copyPrefixes) :$/;"	f	class:pcRelJump
+./tags:snip	BPatch_private.h	/^    BPatch_snippet snip; \/\/ Make a copy so that the user doesn't have to.$/;"	m	struct:batchInsertionRecord
+./parRegion.h: * See the dyninst/COPYRIGHT file for copyright information.
+./parRegion.h: * You should have received a copy of the GNU Lesser General Public
+./BPatch_function.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_function.C: * You should have received a copy of the GNU Lesser General Public
+./BPatch_function.C:	std::copy(func->prettyNameVector().begin(), 
+./BPatch_function.C:	std::copy(func->symTabNameVector().begin(), 
+./BPatch_function.C:	std::copy(func->typedNameVector().begin(), 
+./BPatch_function.C:   std::copy(unsorted_blocks.begin(), unsorted_blocks.end(), std::inserter(blocks, blocks.begin()));
+./BPatch_function.C:   std::copy(ops.int_set.begin(), ops.int_set.end(), std::inserter(tmp, tmp.end()));
+./image.C: * See the dyninst/COPYRIGHT file for copyright information.
+./image.C: * You should have received a copy of the GNU Lesser General Public
+./image.C:     // copy or create function name
+./BPatch_memoryAccessAdapter.h: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_memoryAccessAdapter.h: * You should have received a copy of the GNU Lesser General Public
+./codegen.C: * See the dyninst/COPYRIGHT file for copyright information.
+./codegen.C: * You should have received a copy of the GNU Lesser General Public
+./codegen.C:// Deep copy
+./codegen.C:    // Same as copy constructor, really
+./codegen.C:void codeGen::copy(const void *b, const unsigned size, const codeBufIndex_t index) {
+./codegen.C:  copy(b, size);
+./codegen.C:void codeGen::copy(const void *b, const unsigned size) {
+./codegen.C:void codeGen::copy(const std::vector<unsigned char> &buf) {
+./codegen.C:   std::copy(buf.begin(), buf.end(), ptr);
+./codegen.C:void codeGen::copy(codeGen &gen) {
+./codegen.C:void codeGen::copyAligned(const void *b, const unsigned size) {
+./codegen.C:	gen_->copy(&addr, size_, dest_);
+./BPatch_dependenceGraphEdge.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_dependenceGraphEdge.C: * You should have received a copy of the GNU Lesser General Public
+./mapped_object.h: * See the dyninst/COPYRIGHT file for copyright information.
+./mapped_object.h: * You should have received a copy of the GNU Lesser General Public
+./BPatch_dependenceGraphNode.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_dependenceGraphNode.C: * You should have received a copy of the GNU Lesser General Public
+./pcEventMuxer.h: * See the dyninst/COPYRIGHT file for copyright information.
+./pcEventMuxer.h: * You should have received a copy of the GNU Lesser General Public
+./syscallNotification.C: * See the dyninst/COPYRIGHT file for copyright information.
+./syscallNotification.C: * You should have received a copy of the GNU Lesser General Public
+./syscallNotification.C:    // We need to copy over the instMappings and get the new miniTramps from
+./syscallNotification.C:    // We don't copy the instMappings, but make new copies.
+./pcEventMuxer.C: * See the dyninst/COPYRIGHT file for copyright information.
+./pcEventMuxer.C: * You should have received a copy of the GNU Lesser General Public
+./pcEventMuxer.C:// Apologies for the #define, but I get tired of copying the same text over and over, and since this has
+./BPatch.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch.C: * You should have received a copy of the GNU Lesser General Public
+./BPatch.C:       std::copy(signums->begin(), signums->end(), std::inserter(tmp, tmp.end()));
+./dominator.h: * See the dyninst/COPYRIGHT file for copyright information.
+./dominator.h: * You should have received a copy of the GNU Lesser General Public
+./inst-power.h: * See the dyninst/COPYRIGHT file for copyright information.
+./inst-power.h: * You should have received a copy of the GNU Lesser General Public
+./BPatch_object.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_object.C: * You should have received a copy of the GNU Lesser General Public
+./codegen-x86.h: * See the dyninst/COPYRIGHT file for copyright information.
+./codegen-x86.h: * You should have received a copy of the GNU Lesser General Public
+./BPatch_typePrivate.h: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_typePrivate.h: * You should have received a copy of the GNU Lesser General Public
+./codegen.h: * See the dyninst/COPYRIGHT file for copyright information.
+./codegen.h: * You should have received a copy of the GNU Lesser General Public
+./codegen.h:    // Copy constructor. Deep-copy -- allocates
+./codegen.h:    void copy(const void *buf, const unsigned size);
+./codegen.h:    void copy(const void *buf, const unsigned size, const codeBufIndex_t index);
+./codegen.h:    void copy(const std::vector<unsigned char> &buf);
+./codegen.h:    // Workaround for copying strings on word-aligned platforms
+./codegen.h:    void copyAligned(const void *buf, const unsigned size);
+./codegen.h:    void copy(codeGen &gen);
+./codegen.h:    // With ptr() and used() you can copy into the mutatee.
+./codegen.h:    // For things that make a copy of the current pointer and
+./BPatch_image.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_image.C: * You should have received a copy of the GNU Lesser General Public
+./BPatch_image.C:    vector<Address> funcEntryAddrs_(funcEntryAddrs); // make an editable copy
+./BPatch_image.C:            // copy changed modules to affectedModules
+./Patching.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Patching.C: * You should have received a copy of the GNU Lesser General Public
+./LinearVariable.h: * See the dyninst/COPYRIGHT file for copyright information.
+./LinearVariable.h: * You should have received a copy of the GNU Lesser General Public
+./syscall-vxworks.C: * See the dyninst/COPYRIGHT file for copyright information.
+./syscall-vxworks.C: * You should have received a copy of the GNU Lesser General Public
+./syscall-vxworks.C:    // We need to copy over the instMappings and get the new miniTramps from
+./syscall-vxworks.C:    // We don't copy the instMappings, but make new copies.
+./emit-x86.h: * See the dyninst/COPYRIGHT file for copyright information.
+./emit-x86.h: * You should have received a copy of the GNU Lesser General Public
+./function.h: * See the dyninst/COPYRIGHT file for copyright information.
+./function.h: * You should have received a copy of the GNU Lesser General Public
+./function.h:  // Don't make the std::string a reference; we want a copy.
+./ntDL.h: * See the dyninst/COPYRIGHT file for copyright information.
+./ntDL.h: * You should have received a copy of the GNU Lesser General Public
+./linux.C: * See the dyninst/COPYRIGHT file for copyright information.
+./linux.C: * You should have received a copy of the GNU Lesser General Public
+./linux.C:bool PCProcess::copyDanglingMemory(PCProcess *) {
+./instPoint.C: * See the dyninst/COPYRIGHT file for copyright information.
+./instPoint.C: * You should have received a copy of the GNU Lesser General Public
+./BPatch_basicBlockLoop.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_basicBlockLoop.C: * You should have received a copy of the GNU Lesser General Public
+./BPatch_basicBlockLoop.C:    // start with a copy of all this loops basic blocks
+./BPatch_basicBlockLoop.C:      std::copy(contLoops[i]->basicBlocks.begin(),
+./hybridCallbacks.C: * See the dyninst/COPYRIGHT file for copyright information.
+./hybridCallbacks.C: * You should have received a copy of the GNU Lesser General Public
+./registerSpace.C: * See the dyninst/COPYRIGHT file for copyright information.
+./registerSpace.C: * You should have received a copy of the GNU Lesser General Public
+./vxworks.h: * See the dyninst/COPYRIGHT file for copyright information.
+./vxworks.h: * You should have received a copy of the GNU Lesser General Public
+./linux-x86.C: * See the dyninst/COPYRIGHT file for copyright information.
+./linux-x86.C: * You should have received a copy of the GNU Lesser General Public
+./inst-linux.C: * See the dyninst/COPYRIGHT file for copyright information.
+./inst-linux.C: * You should have received a copy of the GNU Lesser General Public
+./instPoint.h: * See the dyninst/COPYRIGHT file for copyright information.
+./instPoint.h: * You should have received a copy of the GNU Lesser General Public
+./binaryEdit.C: * See the dyninst/COPYRIGHT file for copyright information.
+./binaryEdit.C: * You should have received a copy of the GNU Lesser General Public
+./binaryEdit.C:      // Now, we need to copy in the memory of the new segments
+./InstructionCache.C: * See the dyninst/COPYRIGHT file for copyright information.
+./InstructionCache.C: * You should have received a copy of the GNU Lesser General Public
+./parse-power.C: * See the dyninst/COPYRIGHT file for copyright information.
+./parse-power.C: * You should have received a copy of the GNU Lesser General Public
+./freebsd.C: * See the dyninst/COPYRIGHT file for copyright information.
+./freebsd.C: * You should have received a copy of the GNU Lesser General Public
+./freebsd.C:bool PCProcess::copyDanglingMemory(PCProcess *) {
+./BPatch_addressSpace.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_addressSpace.C: * You should have received a copy of the GNU Lesser General Public
+./Parsing.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Parsing.h: * You should have received a copy of the GNU Lesser General Public
+./RegisterConversion.h: * See the dyninst/COPYRIGHT file for copyright information.
+./RegisterConversion.h: * You should have received a copy of the GNU Lesser General Public
+./pdwinntDL.C: * See the dyninst/COPYRIGHT file for copyright information.
+./pdwinntDL.C: * You should have received a copy of the GNU Lesser General Public
+./util.h: * See the dyninst/COPYRIGHT file for copyright information.
+./util.h: * You should have received a copy of the GNU Lesser General Public
+./vxworks.C: * See the dyninst/COPYRIGHT file for copyright information.
+./vxworks.C: * You should have received a copy of the GNU Lesser General Public
+./vxworks.C:WTX_EVENT_DESC copyWtxDesc(WTX_EVENT_DESC *desc)
+./vxworks.C:        // Don't free for now.  We'll do a full copy of
+./nt_signal_emul.h: * See the dyninst/COPYRIGHT file for copyright information.
+./nt_signal_emul.h: * You should have received a copy of the GNU Lesser General Public
+./frame.h: * See the dyninst/COPYRIGHT file for copyright information.
+./frame.h: * You should have received a copy of the GNU Lesser General Public
+./BPatch_collections.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_collections.C: * You should have received a copy of the GNU Lesser General Public
+./binaryEdit.h: * See the dyninst/COPYRIGHT file for copyright information.
+./binaryEdit.h: * You should have received a copy of the GNU Lesser General Public
+./patch.h: * See the dyninst/COPYRIGHT file for copyright information.
+./patch.h: * You should have received a copy of the GNU Lesser General Public
+./addressSpace.C: * See the dyninst/COPYRIGHT file for copyright information.
+./addressSpace.C: * You should have received a copy of the GNU Lesser General Public
+./addressSpace.C:void AddressSpace::copyAddressSpace(AddressSpace *parent) {
+./addressSpace.C:    // This is only defined for process->process copy
+./addressSpace.C:    // until someone can give a good reason for copying
+./addressSpace.C:    trapMapping.copyTrapMappings(& (parent->trapMapping));
+./addressSpace.C:       // Efficiency; this avoids a spurious copy of the entire
+./addressSpace.C:// copy for images, or a relocated function's self copy.
+./addressSpace.C:void trampTrapMappings::copyTrapMappings(trampTrapMappings *parent)
+./addressSpace.C:   // 2) Create a copy of original with the new provided name. 
+./addressSpace.C:   //      branches to this copy. 
+./block.h: * See the dyninst/COPYRIGHT file for copyright information.
+./block.h: * You should have received a copy of the GNU Lesser General Public
+./parse-x86.C: * See the dyninst/COPYRIGHT file for copyright information.
+./parse-x86.C: * You should have received a copy of the GNU Lesser General Public
+./dynProcess-x86.C: * See the dyninst/COPYRIGHT file for copyright information.
+./dynProcess-x86.C: * You should have received a copy of the GNU Lesser General Public
+./RegisterConversion-ppc.C: * See the dyninst/COPYRIGHT file for copyright information.
+./RegisterConversion-ppc.C: * You should have received a copy of the GNU Lesser General Public
+./pdwinnt.C: * See the dyninst/COPYRIGHT file for copyright information.
+./pdwinnt.C: * You should have received a copy of the GNU Lesser General Public
+./pdwinnt.C:bool PCProcess::copyDanglingMemory(PCProcess *parent)
+./Parsing-arch.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Parsing-arch.C: * You should have received a copy of the GNU Lesser General Public
+./codebuffer.h: * See the dyninst/COPYRIGHT file for copyright information.
+./codebuffer.h: * You should have received a copy of the GNU Lesser General Public
+./codebuffer.h:// We support two methods of writing: either copying data into the
+./codebuffer.h:// buffer via codebuf methods or accessing a pointer and data copying externally.
+./codebuffer.h:  // Copy constructor. Deep-copy -- allocates
+./codebuffer.h:  void copy(const void *buf, const unsigned size);
+./codebuffer.h:  void copy(const void *buf, const unsigned size, const index_t index);
+./codebuffer.h:  void copy(codeBuf &gen);
+./codebuffer.h:  // With ptr() and used() you can copy into the mutatee.
+./codebuffer.h:  // For things that make a copy of the current pointer and
+./dyninst.h: * See the dyninst/COPYRIGHT file for copyright information.
+./dyninst.h: * You should have received a copy of the GNU Lesser General Public
+./inst-winnt.C: * See the dyninst/COPYRIGHT file for copyright information.
+./inst-winnt.C: * You should have received a copy of the GNU Lesser General Public
+./BPatch_instruction.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_instruction.C: * You should have received a copy of the GNU Lesser General Public
+./linux-x86.h: * See the dyninst/COPYRIGHT file for copyright information.
+./linux-x86.h: * You should have received a copy of the GNU Lesser General Public
+./frameChecker.C: * See the dyninst/COPYRIGHT file for copyright information.
+./frameChecker.C: * You should have received a copy of the GNU Lesser General Public
+./hybridOverwrites.C: * See the dyninst/COPYRIGHT file for copyright information.
+./hybridOverwrites.C: * You should have received a copy of the GNU Lesser General Public
+./hybridOverwrites.C:    // . Make a shadow copy of the block that is about to be overwritten
+./hybridOverwrites.C: * 1a.Make a shadow copy of the overwritten page and restore write permissions 
+./hybridOverwrites.C: * . Make a shadow copy of the block that is about to be overwritten
+./unix.h: * See the dyninst/COPYRIGHT file for copyright information.
+./unix.h: * You should have received a copy of the GNU Lesser General Public
+./util.C: * See the dyninst/COPYRIGHT file for copyright information.
+./util.C: * You should have received a copy of the GNU Lesser General Public
+./log1:./dynProcess.C:// A copy of the BPatch-level instrumentation installer
+./log1:./mapped_object.C: * mapped file, since we don't want to copy instrumentation into
+./log1:./mapped_object.C:    // 2. copy code bytes back into the regBuf to wipe out instrumentation
+./frameChecker.h: * See the dyninst/COPYRIGHT file for copyright information.
+./frameChecker.h: * You should have received a copy of the GNU Lesser General Public
+./BPatch_private.h: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_private.h: * You should have received a copy of the GNU Lesser General Public
+./BPatch_private.h:    BPatch_snippet snip; // Make a copy so that the user doesn't have to.
+./hybridInstrumentation.C: * See the dyninst/COPYRIGHT file for copyright information.
+./hybridInstrumentation.C: * You should have received a copy of the GNU Lesser General Public
+./hybridInstrumentation.C:    // If we're copying original<->shadow do it here
+./ast.C: * See the dyninst/COPYRIGHT file for copyright information.
+./ast.C: * You should have received a copy of the GNU Lesser General Public
+./ast.C:    // Since we only ever have one, keep a static copy around. If
+./ast.C:		// be shared, and there is a copy. In that case, we assume
+./ast.C:         Register src1_copy = src1;
+./ast.C:            (void) emitA(op, src1_copy, 0, 
+./ast.C:	 Register src1_copy = src1;
+./ast.C:            (void) emitA(op, src1_copy, 0,                                                    
+./ast.C:   AstNodePtr copy = operatorNode(op, (loperand ? loperand->deepCopy() : loperand),
+./ast.C:   copy->setType(bptype);
+./ast.C:   copy->setTypeChecking(doTypeCheck);
+./ast.C:   copy->setLineNum(getLineNum());
+./ast.C:   copy->setColumnNum(getColumnNum());
+./ast.C:   copy->setSnippetName(snippetName);
+./ast.C:/* TODO: Impliment this copy.
+./ast.C:   copy->columnInfoSet = columnInfoSet
+./ast.C:   copy->lineInfoSet = lineInfoSet;
+./ast.C:   return copy;
+./ast.C:   AstOperandNode * copy = new AstOperandNode();
+./ast.C:   copy->oType = oType;
+./ast.C:   copy->oValue = oValue; //this might need to be copied deeper
+./ast.C:   copy->oVar = oVar;
+./ast.C:   if(operand_) copy->operand_ = operand_->deepCopy();
+./ast.C:   copy->setType(bptype);
+./ast.C:   copy->setTypeChecking(doTypeCheck);
+./ast.C:   copy->setLineNum(getLineNum());
+./ast.C:   copy->lineInfoSet = lineInfoSet;
+./ast.C:   copy->setColumnNum(getColumnNum());
+./ast.C:   copy->columnInfoSet = columnInfoSet;
+./ast.C:   copy->setSnippetName(getSnippetName());
+./ast.C:   return AstNodePtr(copy);
+./ast.C:   AstCallNode * copy;
+./ast.C:      copy = new AstCallNode();
+./ast.C:      copy = new AstCallNode(func_name_, empty_args);
+./ast.C://   copy->func_name_ = func_name_;
+./ast.C:   copy->func_addr_ = func_addr_; 
+./ast.C:   copy->func_ = func_;
+./ast.C:      copy->args_.push_back(args_[i]->deepCopy());
+./ast.C:   copy->callReplace_ = callReplace_;
+./ast.C:   copy->constFunc_ = constFunc_;
+./ast.C:   copy->setType(bptype);
+./ast.C:   copy->setTypeChecking(doTypeCheck);
+./ast.C:   copy->setLineNum(getLineNum());
+./ast.C:   copy->lineInfoSet = lineInfoSet;
+./ast.C:   copy->setColumnNum(getColumnNum());
+./ast.C:   copy->columnInfoSet = columnInfoSet;
+./ast.C:   copy->setSnippetName(getSnippetName());
+./ast.C:   copy->snippetNameSet = snippetNameSet;
+./ast.C:   return AstNodePtr(copy);
+./ast.C:   AstSequenceNode * copy = new AstSequenceNode();
+./ast.C:      copy->sequence_.push_back(sequence_[i]->deepCopy());
+./ast.C:   copy->setType(bptype);
+./ast.C:   copy->setTypeChecking(doTypeCheck);
+./ast.C:   copy->setLineNum(getLineNum());
+./ast.C:   copy->lineInfoSet = lineInfoSet;
+./ast.C:   copy->setColumnNum(getColumnNum());
+./ast.C:   copy->columnInfoSet = columnInfoSet;
+./ast.C:   copy->setSnippetName(getSnippetName());
+./ast.C:   copy->snippetNameSet = snippetNameSet;
+./ast.C:   return AstNodePtr(copy);
+./ast.C:   AstVariableNode * copy = new AstVariableNode();
+./ast.C:   copy->index = index;
+./ast.C:   copy->ranges_ = ranges_; //i'm not sure about this one. (it's a vector)
+./ast.C:      copy->ast_wrappers_.push_back(ast_wrappers_[i]->deepCopy());
+./ast.C:   copy->setType(bptype);
+./ast.C:   copy->setTypeChecking(doTypeCheck);
+./ast.C:   copy->setLineNum(getLineNum());
+./ast.C:   copy->lineInfoSet = lineInfoSet;
+./ast.C:   copy->setColumnNum(getColumnNum());
+./ast.C:   copy->columnInfoSet = columnInfoSet;
+./ast.C:   copy->setSnippetName(getSnippetName());
+./ast.C:   copy->snippetNameSet = snippetNameSet;
+./ast.C:   return AstNodePtr(copy);
+./ast.C:   AstMiniTrampNode * copy = new AstMiniTrampNode();
+./ast.C:   copy->inline_ = inline_;
+./ast.C:   copy->ast_ = ast_->deepCopy();
+./ast.C:   copy->setType(bptype);
+./ast.C:   copy->setTypeChecking(doTypeCheck);
+./ast.C:   copy->setLineNum(getLineNum());
+./ast.C:   copy->lineInfoSet = lineInfoSet;
+./ast.C:   copy->setColumnNum(getColumnNum());
+./ast.C:   copy->columnInfoSet = columnInfoSet;
+./ast.C:   copy->setSnippetName(getSnippetName());
+./ast.C:   copy->snippetNameSet = snippetNameSet;
+./ast.C:   return AstNodePtr(copy);
+./ast.C:   buffer.copy(start_ptr, cur_ptr);
+./ast.C:   gen.copy(buf.start_ptr(), buf.size());
+./BPatch_memoryAccess.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_memoryAccess.C: * You should have received a copy of the GNU Lesser General Public
+./BPatch_templates.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_templates.C: * You should have received a copy of the GNU Lesser General Public
+./ELF_Section.h: * See the dyninst/COPYRIGHT file for copyright information.
+./ELF_Section.h: * You should have received a copy of the GNU Lesser General Public
+./BPatch_process.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_process.C: * You should have received a copy of the GNU Lesser General Public
+./BPatch_process.C:      char *pathenv_copy = strdup(pathenv);
+./BPatch_process.C:      char *nextpath = strtok_r(pathenv_copy, ":", &ptrptr);
+./BPatch_process.C:      ::free(pathenv_copy);
+./BPatch_frame.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_frame.C: * You should have received a copy of the GNU Lesser General Public
+./parRegion.C: * See the dyninst/COPYRIGHT file for copyright information.
+./parRegion.C: * You should have received a copy of the GNU Lesser General Public
+./pcEventHandler.h: * See the dyninst/COPYRIGHT file for copyright information.
+./pcEventHandler.h: * You should have received a copy of the GNU Lesser General Public
+./linux.h: * See the dyninst/COPYRIGHT file for copyright information.
+./linux.h: * You should have received a copy of the GNU Lesser General Public
+./syscallNotification.h: * See the dyninst/COPYRIGHT file for copyright information.
+./syscallNotification.h: * You should have received a copy of the GNU Lesser General Public
+./RegisterConversion-x86.C: * See the dyninst/COPYRIGHT file for copyright information.
+./RegisterConversion-x86.C: * You should have received a copy of the GNU Lesser General Public
+./BPatch_loopTreeNode.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_loopTreeNode.C: * You should have received a copy of the GNU Lesser General Public
+./freebsd-x86.h: * See the dyninst/COPYRIGHT file for copyright information.
+./freebsd-x86.h: * You should have received a copy of the GNU Lesser General Public
+./inst-x86.h: * See the dyninst/COPYRIGHT file for copyright information.
+./inst-x86.h: * You should have received a copy of the GNU Lesser General Public
+./trapMappings.h: * See the dyninst/COPYRIGHT file for copyright information.
+./trapMappings.h: * You should have received a copy of the GNU Lesser General Public
+./trapMappings.h:   void copyTrapMappings(trampTrapMappings *parent);
+./function.C: * See the dyninst/COPYRIGHT file for copyright information.
+./function.C: * You should have received a copy of the GNU Lesser General Public
+./function.C:      std::copy(objblks.begin(), objblks.end(), std::inserter(blks, blks.end()));
+./linux-power.h: * See the dyninst/COPYRIGHT file for copyright information.
+./linux-power.h: * You should have received a copy of the GNU Lesser General Public
+./BPatch_collections.h: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_collections.h: * You should have received a copy of the GNU Lesser General Public
+./dynThread.C: * See the dyninst/COPYRIGHT file for copyright information.
+./dynThread.C: * You should have received a copy of the GNU Lesser General Public
+./BPatch_parRegion.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_parRegion.C: * You should have received a copy of the GNU Lesser General Public
+./os.h: * See the dyninst/COPYRIGHT file for copyright information.
+./os.h: * You should have received a copy of the GNU Lesser General Public
+./instP.h: * See the dyninst/COPYRIGHT file for copyright information.
+./instP.h: * You should have received a copy of the GNU Lesser General Public
+./stackwalk-ppc.C: * See the dyninst/COPYRIGHT file for copyright information.
+./stackwalk-ppc.C: * You should have received a copy of the GNU Lesser General Public
+./pcEventHandler.C: * See the dyninst/COPYRIGHT file for copyright information.
+./pcEventHandler.C: * You should have received a copy of the GNU Lesser General Public
+./BPatch_point.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_point.C: * You should have received a copy of the GNU Lesser General Public
+./codeRange.h: * See the dyninst/COPYRIGHT file for copyright information.
+./codeRange.h: * You should have received a copy of the GNU Lesser General Public
+./codeRange.h:    /** copy constructor */
+./pdwinnt.h: * See the dyninst/COPYRIGHT file for copyright information.
+./pdwinnt.h: * You should have received a copy of the GNU Lesser General Public
+./NTTypes.h: * See the dyninst/COPYRIGHT file for copyright information.
+./NTTypes.h: * You should have received a copy of the GNU Lesser General Public
+./unix.C: * See the dyninst/COPYRIGHT file for copyright information.
+./unix.C: * You should have received a copy of the GNU Lesser General Public
+./unix.C:        // Environment inherited from this process, copy the current
+./infHeap.h: * See the dyninst/COPYRIGHT file for copyright information.
+./infHeap.h: * You should have received a copy of the GNU Lesser General Public
+./infHeap.h:  inferiorHeap(const inferiorHeap &src);  // create a new heap that is a copy
+./BPatch_flowGraph.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_flowGraph.C: * You should have received a copy of the GNU Lesser General Public
+./BPatch_flowGraph.C:   std::copy(allBlocks.begin(), allBlocks.end(), std::inserter(abb, abb.end()));
+./BPatch_flowGraph.C:   std::copy(tmp.begin(), tmp.end(), std::inserter(abb.int_set, abb.int_set.end()));
+./syscall-linux.C: * See the dyninst/COPYRIGHT file for copyright information.
+./syscall-linux.C: * You should have received a copy of the GNU Lesser General Public
+./freebsd-x86.C: * See the dyninst/COPYRIGHT file for copyright information.
+./freebsd-x86.C: * You should have received a copy of the GNU Lesser General Public
+./parse-cfg.h: * See the dyninst/COPYRIGHT file for copyright information.
+./parse-cfg.h: * You should have received a copy of the GNU Lesser General Public
+./parse-cfg.h:    // address; we do this to avoid a copy when getting Insns from block_instances
+./parse-cfg.h:   void copyNames(parse_func *duplicate);
+./Relocation/DynObject.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/DynObject.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/DynInstrumenter.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/DynInstrumenter.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Widgets/InstWidget.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Widgets/InstWidget.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Widgets/CFWidget-x86.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Widgets/CFWidget-x86.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Widgets/CFWidget-x86.C:   // Two possibilities here: either copying an indirect jump w/o
+./Relocation/Widgets/CFWidget-x86.C:   // easy - we just copy 'em.
+./Relocation/Widgets/CFWidget-x86.C:   // I'm copying the code from emitCallInstruction...
+./Relocation/Widgets/Widget.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Widgets/Widget.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Widgets/ASTWidget.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Widgets/ASTWidget.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Widgets/Include.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Widgets/Include.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Widgets/InstWidget.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Widgets/InstWidget.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Widgets/PCWidget.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Widgets/PCWidget.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Widgets/CallbackWidget.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Widgets/CallbackWidget.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Widgets/InsnWidget.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Widgets/InsnWidget.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Widgets/RelDataWidget.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Widgets/RelDataWidget.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Widgets/PCWidget.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Widgets/PCWidget.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Widgets/CFPatch.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Widgets/CFPatch.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Widgets/CFPatch.C:   // I'm copying the code from emitCallInstruction...
+./Relocation/Widgets/CFWidget.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Widgets/CFWidget.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Widgets/RelDataWidget.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Widgets/RelDataWidget.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Widgets/CallbackWidget.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Widgets/CallbackWidget.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Widgets/ASTWidget.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Widgets/ASTWidget.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Widgets/CFWidget-ppc.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Widgets/CFWidget-ppc.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Widgets/CFWidget-ppc.C:   // I'm copying the code from emitCallInstruction...
+./Relocation/Widgets/InsnWidget.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Widgets/InsnWidget.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Widgets/CFWidget.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Widgets/CFWidget.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/DynAddrSpace.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/DynAddrSpace.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/CodeBuffer.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/CodeBuffer.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/CodeBuffer.C:   std::copy(input, input + size, std::back_inserter(buffer_));
+./Relocation/CodeBuffer.C:   std::copy(buf.begin(), buf.end(), std::back_inserter(buffer_));
+./Relocation/CodeBuffer.C:   gen.copy(buffer_);
+./Relocation/Transformers/Movement-adhoc.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Transformers/Movement-adhoc.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Transformers/Include.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Transformers/Include.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Transformers/Modification.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Transformers/Modification.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Transformers/Transformer.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Transformers/Transformer.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Transformers/Transformer.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Transformers/Transformer.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Transformers/Instrumenter.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Transformers/Instrumenter.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Transformers/Movement-analysis.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Transformers/Movement-analysis.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Transformers/Instrumenter.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Transformers/Instrumenter.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Transformers/Instrumenter.C:   // copy this puppy...
+./Relocation/Transformers/Instrumenter.C:		 ft->trg->copy(),
+./Relocation/Transformers/Instrumenter.C:		 cond->trg->copy(),
+./Relocation/Transformers/Modification.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Transformers/Modification.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Transformers/Movement-analysis.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Transformers/Movement-analysis.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Transformers/Movement-adhoc.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Transformers/Movement-adhoc.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Transformers/Defensive.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Transformers/Defensive.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/DynInstrumenter.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/DynInstrumenter.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/CodeMover.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/CodeMover.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Springboard.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Springboard.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/CodeTracker.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/CodeTracker.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/Relocation.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Relocation.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/DynCFGMaker.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/DynCFGMaker.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/DynCFGMaker.C:PatchFunction* DynCFGMaker::copyFunction(PatchFunction* f, PatchObject* o) {
+./Relocation/DynCFGMaker.C:PatchBlock* DynCFGMaker::copyBlock(PatchBlock* b, PatchObject* o) {
+./Relocation/DynCFGMaker.C:PatchEdge* DynCFGMaker::copyEdge(PatchEdge* e, PatchObject* o) {
+./Relocation/DynPointMaker.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/DynPointMaker.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/CodeBuffer.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/CodeBuffer.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/CodeBuffer.h://  two ways of specifying code: copy and patch. Copy handles PIC code, and pulls in a buffer of bytes
+./Relocation/DynObject.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/DynObject.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/DynObject.h:    virtual PatchFunction* copyFunction(PatchFunction*, PatchObject*);
+./Relocation/DynObject.h:    virtual PatchBlock* copyBlock(PatchBlock*, PatchObject*);
+./Relocation/DynObject.h:    virtual PatchEdge* copyEdge(PatchEdge*, PatchObject*);
+./Relocation/CFG/RelocTarget.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/CFG/RelocTarget.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/CFG/RelocTarget.h:  virtual TargetInt *copy() const {return NULL; };
+./Relocation/CFG/RelocTarget.h:  virtual TargetInt *copy() const { return new Target<RelocBlock *>(t_); }
+./Relocation/CFG/RelocTarget.h:  virtual TargetInt *copy() const { return new Target<block_instance *>(t_); }
+./Relocation/CFG/RelocTarget.h:  virtual TargetInt *copy() const { return new Target<Address>(t_); }
+./Relocation/CFG/RelocEdge.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/CFG/RelocEdge.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/CFG/RelocTarget.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/CFG/RelocTarget.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/CFG/RelocEdge.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/CFG/RelocEdge.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/CFG/RelocBlock.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/CFG/RelocBlock.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/CFG/RelocBlock.h:   // If we're a func-specific copy
+./Relocation/CFG/RelocGraph.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/CFG/RelocGraph.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/CFG/RelocBlock.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/CFG/RelocBlock.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/CFG/RelocBlock.C:   // We're constructing a copy of a subgraph of the CFG. Initially we just copy the nodes
+./Relocation/CFG/RelocBlock.C:   // (aka RelocBlocks), but we also need to copy edges. There are three types of edges we care
+./Relocation/CFG/RelocGraph.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/CFG/RelocGraph.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/CodeMover.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/CodeMover.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/CodeMover.h:  // have to copy it on output; CodeMovers are designed to be discarded
+./Relocation/Springboard.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/Springboard.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/DynAddrSpace.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/DynAddrSpace.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/DynCommon.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/DynCommon.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/CodeTracker.h: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/CodeTracker.h: * You should have received a copy of the GNU Lesser General Public
+./Relocation/DynPointMaker.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/DynPointMaker.C: * You should have received a copy of the GNU Lesser General Public
+./Relocation/patchapi_debug.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Relocation/patchapi_debug.C: * You should have received a copy of the GNU Lesser General Public
+./BPatch_memoryAccessAdapter.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_memoryAccessAdapter.C: * You should have received a copy of the GNU Lesser General Public
+./pcrel.h: * See the dyninst/COPYRIGHT file for copyright information.
+./pcrel.h: * You should have received a copy of the GNU Lesser General Public
+./pcrel.h:    bool copy_prefixes_;
+./pcrel.h:   pcRelJump(patchTarget *t, const instruction &i, bool copyPrefixes = true);
+./pcrel.h:   pcRelJump(Address target, const instruction &i, bool copyPrefixes = true);
+./frame.C: * See the dyninst/COPYRIGHT file for copyright information.
+./frame.C: * You should have received a copy of the GNU Lesser General Public
+./inst.h: * See the dyninst/COPYRIGHT file for copyright information.
+./inst.h: * You should have received a copy of the GNU Lesser General Public
+./BPatch_edge.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_edge.C: * You should have received a copy of the GNU Lesser General Public
+./registerSpace.h: * See the dyninst/COPYRIGHT file for copyright information.
+./registerSpace.h: * You should have received a copy of the GNU Lesser General Public
+./arch-forward-decl.h: * See the dyninst/COPYRIGHT file for copyright information.
+./arch-forward-decl.h: * You should have received a copy of the GNU Lesser General Public
+./block.C: * See the dyninst/COPYRIGHT file for copyright information.
+./block.C: * You should have received a copy of the GNU Lesser General Public
+./block.C:  // We also need to copy edges.
+./emit-x86.C: * See the dyninst/COPYRIGHT file for copyright information.
+./emit-x86.C: * You should have received a copy of the GNU Lesser General Public
+./addressSpace.h: * See the dyninst/COPYRIGHT file for copyright information.
+./addressSpace.h: * You should have received a copy of the GNU Lesser General Public
+./addressSpace.h:    void copyAddressSpace(AddressSpace *parent);
+./stackwalk-x86.C: * See the dyninst/COPYRIGHT file for copyright information.
+./stackwalk-x86.C: * You should have received a copy of the GNU Lesser General Public
+./asmExterns.h: * See the dyninst/COPYRIGHT file for copyright information.
+./asmExterns.h: * You should have received a copy of the GNU Lesser General Public
+./BPatch_basicBlock.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_basicBlock.C: * You should have received a copy of the GNU Lesser General Public
+./BPatch_basicBlock.C:   std::copy(tmp.begin(), tmp.end(), std::inserter(buffer.int_set, buffer.begin()));
+./BPatch_basicBlock.C:   std::copy(tmp.begin(), tmp.end(), std::inserter(buffer.int_set, buffer.begin()));
+./MemoryEmulator/memEmulatorTransformer.C: * See the dyninst/COPYRIGHT file for copyright information.
+./MemoryEmulator/memEmulatorTransformer.C: * You should have received a copy of the GNU Lesser General Public
+./MemoryEmulator/memEmulatorWidget.C: * See the dyninst/COPYRIGHT file for copyright information.
+./MemoryEmulator/memEmulatorWidget.C: * You should have received a copy of the GNU Lesser General Public
+./MemoryEmulator/memEmulatorWidget.C:   copyScratchToCodeBuffer(buffer);
+./MemoryEmulator/memEmulatorWidget.C:   copyScratchToCodeBuffer(buffer);
+./MemoryEmulator/memEmulatorWidget.C:bool MemEmulator::copyScratchToCodeBuffer(CodeBuffer &buffer) {
+./MemoryEmulator/memEmulatorWidget.C:	copyScratchToCodeBuffer(buffer);
+./MemoryEmulator/memEmulatorWidget.C:	copyScratchToCodeBuffer(buffer);
+./MemoryEmulator/memEmulatorWidget.C:	copyScratchToCodeBuffer(buffer);
+./MemoryEmulator/memEmulatorWidget.C:	copyScratchToCodeBuffer(buffer);
+./MemoryEmulator/memEmulatorWidget.C:	scratch.copy(insn_->ptr(), insn_->size());
+./MemoryEmulator/memEmulatorWidget.h: * See the dyninst/COPYRIGHT file for copyright information.
+./MemoryEmulator/memEmulatorWidget.h: * You should have received a copy of the GNU Lesser General Public
+./MemoryEmulator/memEmulatorWidget.h:   bool copyScratchToCodeBuffer(CodeBuffer &);
+./MemoryEmulator/memEmulator.h: * See the dyninst/COPYRIGHT file for copyright information.
+./MemoryEmulator/memEmulator.h: * You should have received a copy of the GNU Lesser General Public
+./MemoryEmulator/memEmulatorStub.h: * See the dyninst/COPYRIGHT file for copyright information.
+./MemoryEmulator/memEmulatorStub.h: * You should have received a copy of the GNU Lesser General Public
+./MemoryEmulator/memEmulator.C: * See the dyninst/COPYRIGHT file for copyright information.
+./MemoryEmulator/memEmulator.C: * You should have received a copy of the GNU Lesser General Public
+./MemoryEmulator/memEmulator.C:      // TODO copy
+./MemoryEmulator/memEmulator.C:    // Second, nuke it from the list of regions to copy on a sync
+./MemoryEmulator/memEmulator.C:        // We copy "source" (where we're copying from) and "target" (where we're
+./MemoryEmulator/memEmulator.C:        // copying to). We then select snippets of target (where springboards reside)
+./MemoryEmulator/memEmulator.C:        // and copy them into source, and then write source into target.
+./MemoryEmulator/memEmulatorTransformer.h: * See the dyninst/COPYRIGHT file for copyright information.
+./MemoryEmulator/memEmulatorTransformer.h: * You should have received a copy of the GNU Lesser General Public
+./infHeap.C: * See the dyninst/COPYRIGHT file for copyright information.
+./infHeap.C: * You should have received a copy of the GNU Lesser General Public
+./infHeap.C:// create a new inferior heap that is a copy of src. This is used when a process
+./parse-cfg.C: * See the dyninst/COPYRIGHT file for copyright information.
+./parse-cfg.C: * You should have received a copy of the GNU Lesser General Public
+./dynProcess.C: * See the dyninst/COPYRIGHT file for copyright information.
+./dynProcess.C: * You should have received a copy of the GNU Lesser General Public
+./dynProcess.C:    ret->copyAddressSpace(parent);
+./dynProcess.C:    if( !ret->copyDanglingMemory(parent) ) {
+./dynProcess.C:        startup_printf("%s[%d]: failed to copy dangling memory from parent %d to child %d\n",
+./dynProcess.C:// A copy of the BPatch-level instrumentation installer
+./baseTramp.h: * See the dyninst/COPYRIGHT file for copyright information.
+./baseTramp.h: * You should have received a copy of the GNU Lesser General Public
+./codegen-power.C: * See the dyninst/COPYRIGHT file for copyright information.
+./codegen-power.C: * You should have received a copy of the GNU Lesser General Public
+./codegen-power.C:  gen.copy(&raw, sizeof(unsigned));
+./codegen-power.C:  gen.copy(insn.ptr(), insn.size());
+./Parsing.C: * See the dyninst/COPYRIGHT file for copyright information.
+./Parsing.C: * You should have received a copy of the GNU Lesser General Public
+./mapped_object.C: * See the dyninst/COPYRIGHT file for copyright information.
+./mapped_object.C: * You should have received a copy of the GNU Lesser General Public
+./mapped_object.C:      // Doesn't copy things like line info. Ah, well.
+./mapped_object.C:   copyCFG(const_cast<mapped_object*>(s));
+./mapped_object.C: * 2. if memory emulation is not on, copy blocks back in from the
+./mapped_object.C: * mapped file, since we don't want to copy instrumentation into
+./mapped_object.C:    Address copySize = reg->getMemSize();
+./mapped_object.C:    void* regBuf = malloc(copySize);
+./mapped_object.C:    Address initializedEnd = regStart + copySize;
+./mapped_object.C:    // 1. copy memory into regBuf
+./mapped_object.C:                               copySize,
+./mapped_object.C:                __FILE__, __LINE__, (long)regStart+codeBase(), copySize);
+./mapped_object.C:    mal_printf("EXTEND_CB: copied to [%lx %lx)\n", codeBase()+regStart, codeBase()+regStart+copySize);
+./mapped_object.C:    // 2. copy code bytes back into the regBuf to wipe out instrumentation
+./mapped_object.C:        // copy code ranges from old mapped data into regBuf
+./mapped_object.C:            mal_printf("EX: uncopy [%lx %lx)\n", codeBase()+cur->start(),codeBase()+cur->end());
+./mapped_object.C:    reg->setPtrToRawData( regBuf , copySize );
+./mapped_object.C:// 2. copy overwritten regions into the mapped objects
+./mapped_object.C:// 2. copy overwritten regions into the mapped objects
+./BPatch_libInfo.h: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_libInfo.h: * You should have received a copy of the GNU Lesser General Public
+./BPatch_sourceBlock.C: * See the dyninst/COPYRIGHT file for copyright information.
+./BPatch_sourceBlock.C: * You should have received a copy of the GNU Lesser General Public
+./BPatch_sourceBlock.C:   std::copy(sourceLines.begin(), sourceLines.end(),
+./baseTramp.C: * See the dyninst/COPYRIGHT file for copyright information.
+./baseTramp.C: * You should have received a copy of the GNU Lesser General Public

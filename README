@@ -1,0 +1,40 @@
+=============Prepare======================
+1. Download dynamoRIO 5.0.0
+2. Compile Dyninst **Important, this dyninst is a modified version
+3. Modify the config.inc to meet the location of these tools
+
+=============Compile======================
+./make 
+./install
+
+=============Run==========================
+source ./init.sh
+./obj/XnRArmor <target> 2>rewrite.log
+
+=============File=========================
+libarmorconvert.c:
+	The libarmorconvert.c is useless currently.
+	But the init function inside need to update 
+	to move the code space at runtime
+	If later, you need to lift the instrumentation into
+	library, add more handler inside, and register
+	them in CAinst.cpp
+
+CADecoderDynamoRIO.cpp:
+	The decoder. In my case I use dynamoRIO. But if you like the XED more, 
+	feel free to add a new decoder, and inherit from CADecoder class.
+	And make sure the interface correct
+
+CAinst.cpp:
+	The instrumentation logic. I think there are enough comments
+
+ca_defines.h:
+	some Marco defines
+
+CACustomSnippet.h:
+	To convince dyninst use our customized snippet.
+
+
+
+
+

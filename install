@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo cp ./obj/libarmorconvert.so /usr/lib

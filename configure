@@ -1,0 +1,47 @@
+#!/bin/bash
+
+if [ "$(hostname)" == "xichen" ]; then 
+    # chen's laptop
+    export DYNINST_ROOT="/home/xichen/program/DyninstAPI-8.2.1"
+	export DYNAMORIO_ROOT="/home/xichen/program/DynamoRIO-Linux-5.0.0-9"
+    root=$DYNINST_ROOT
+	root_dynamo=$DYNAMORIO_ROOT
+else
+    echo -n "DYNINST_ROOT: "
+    read root
+	echo -n "DYNAMORIO_ROOT: "
+	read root_dynamo
+fi 
+
+if [ ! -d $root ]; then
+    echo "Directory $root does not exist!"
+fi
+
+
+echo DYNINST_ROOT=$root > config.inc
+lib=/usr/lib
+if [ -f $root/install/lib/libdyninstAPI_RT.a ]; then
+    lib=$root/install/lib
+fi
+echo DYNINST_LIB=$lib >> config.inc
+echo DYNINSTAPI_RT_LIB=$lib/libdyninstAPI_RT.so >> config.inc
+echo LD_LIBRARY_PATH=$lib >> config.inc
+echo DYNAMORIO_ROOT=$root_dynamo >> config.inc
+
+if [ "$(arch)" == "x86_64" ]; then
+    cflags="-Darch_x86_64 -Dx86_64_unknown_linux2_4"
+    arch="x64"
+else
+    cflags="-Darch_x86 -Di386_unknown_linux2_0"
+    arch="x86"
+fi
+cflags="$cflags -Dos_linux"
+echo DYNINST_CFLAGS=$cflags >> config.inc
+echo DYNINST_ARCH=$arch >> config.inc
+
+echo -e "include config.inc\n\ninclude Makefile.inc" > Makefile
+
+echo
+echo "*** Generated configuration (config.inc): "
+cat config.inc
+
